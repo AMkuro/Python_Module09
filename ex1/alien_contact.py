@@ -48,10 +48,10 @@ class AlienContact(BaseModel):
 def display_contact(contact: AlienContact) -> str:
     lines: list[str] = [
         "Valid contact report:",
-        f"ID:{contact.contact_id}",
-        f"Type: {contact.contact_type}",
+        f"ID: {contact.contact_id}",
+        f"Type: {contact.contact_type.value}",
         f"Location: {contact.location}",
-        f"Signal: {contact.signal_strength} / 10",
+        f"Signal: {contact.signal_strength}/10",
         f"Duration: {contact.duration_minutes} minutes",
         f"Witnesses: {contact.witness_count}",
         f"Message: {contact.message_received!r}",

@@ -19,7 +19,7 @@ def display_station(station: SpaceStation) -> str:
         "Operational" if station.is_operational else "Not Operational"
     )
     lines: list[str] = [
-        "Valid station created",
+        "Valid station created:",
         f"ID: {station.station_id}",
         f"Name: {station.name}",
         f"Crew: {station.crew_size} people",
